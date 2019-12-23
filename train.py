@@ -28,8 +28,8 @@ from RecoverPlane import RecoverPlane
 import os
 
 flags = tf.app.flags
-flags.DEFINE_string("dataset_dir", "/content/data/", "Dataset directory")
-flags.DEFINE_string("log_dir", "/content/logs/", "Dataset directory")
+flags.DEFINE_string("dataset_dir", "", "Dataset directory")
+flags.DEFINE_string("log_dir", "", "Dataset directory")
 flags.DEFINE_string("init_checkpoint_file",'', "Specific checkpoint file to initialize from")
 flags.DEFINE_float("learning_rate", 0.0001, "Learning rate of for adam")
 flags.DEFINE_float("beta1", 0.99, "Momentum term of adam")
